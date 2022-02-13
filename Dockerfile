@@ -19,11 +19,11 @@ RUN apt-get update && \
     unzip &&\
     rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/janeczku/calibre-web/releases/download/0.6.11/calibre-web-0.6.11.zip &&\
-    unzip -d ./ calibre-web-0.6.11.zip &&\
-    rm calibre-web-0.6.11.zip &&\
-    mv ./calibre-web-0.6.11/* ./ &&\
-    rm -rf calibre-web-0.6.11/
+RUN wget https://github.com/janeczku/calibre-web/releases/download/0.6.14/calibre-web-0.6.14.zip &&\
+    unzip -d ./ calibre-web-0.6.14.zip &&\
+    rm calibre-web-0.6.14.zip &&\
+    mv ./calibre-web-0.6.14/* ./ &&\
+    rm -rf calibre-web-0.6.14/
 
 RUN wget -o /usr/bin/kepubify https://github.com/pgaskin/kepubify/releases/download/v3.1.6/kepubify-linux-arm
 RUN wget -o /usr/bin/covergen https://github.com/pgaskin/kepubify/releases/download/v3.1.6/covergen-linux-arm
