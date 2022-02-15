@@ -25,9 +25,9 @@ RUN wget https://github.com/janeczku/calibre-web/releases/download/0.6.14/calibr
     mv ./calibre-web-0.6.14/* ./ &&\
     rm -rf calibre-web-0.6.14/
 
-RUN wget -o /usr/bin/kepubify https://github.com/pgaskin/kepubify/releases/download/v3.1.6/kepubify-linux-arm
-RUN wget -o /usr/bin/covergen https://github.com/pgaskin/kepubify/releases/download/v3.1.6/covergen-linux-arm
-RUN wget -o /usr/bin/seriesmeta https://github.com/pgaskin/kepubify/releases/download/v3.1.6/seriesmeta-linux-arm
+RUN wget -o /usr/bin/kepubify https://github.com/pgaskin/kepubify/releases/download/v3.1.6/kepubify-linux-64bit
+RUN wget -o /usr/bin/covergen https://github.com/pgaskin/kepubify/releases/download/v3.1.6/covergen-linux-64bit
+RUN wget -o /usr/bin/seriesmeta https://github.com/pgaskin/kepubify/releases/download/v3.1.6/seriesmeta-linux-64bit
 
 RUN apt-get remove wget unzip -y
 RUN pip install -r requirements.txt
